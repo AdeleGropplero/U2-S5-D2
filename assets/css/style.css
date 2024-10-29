@@ -19,7 +19,11 @@ hr {
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
-  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -27,6 +31,9 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 10px;
+  z-index: 999;
 }
 
 @media screen and (min-width: 800px) {
@@ -123,6 +130,26 @@ h1 {
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
 }
+h1 div {
+  position: relative;
+}
+
+h1 img {
+  width: 86%;
+  opacity: 0.7;
+  position: relative;
+  right: -10px;
+  bottom: 28px;
+}
+@media screen and (min-width: 1200px) {
+  h1 img {
+    width: 48%;
+    opacity: 0.6;
+    position: relative;
+    right: -470px;
+    bottom: 37px;
+  }
+}
 
 p,
 address,
@@ -135,6 +162,13 @@ blockquote {
 
 h1 + p {
   color: #a0a0a0;
+}
+
+article image {
+  float: left;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 90px;
 }
 
 @media screen and (max-width: 499px) {
@@ -329,7 +363,11 @@ aside div p:last-child {
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
-  background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
   box-shadow: 0 3px 3px #444;
   color: #f0f0f0;
   padding: 1em;
