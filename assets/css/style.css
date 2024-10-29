@@ -303,7 +303,42 @@ tbody tr:last-of-type {
   border-bottom: 2px solid #3f6bca;
 }
 
+table + p {
+  margin-bottom: 50px;
+}
+
 /* FORM */
+
+section {
+  position: relative;
+}
+
+section h2 {
+  width: 40%;
+  font-size: 40px;
+  padding: 10px;
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  line-height: 2.5rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.579);
+}
+
+section p {
+  margin-top: 50px;
+}
+
+form {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  article iframe {
+    min-height: 328.26px;
+  }
+}
+
 input {
   padding: 5px;
   border: 0;
